@@ -566,11 +566,33 @@ img {
     font-style: italic;
 }
 
-.albums-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.earlier-releases {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--electric-blue) var(--grunge-dark);
+    padding-bottom: 15px;
     margin-bottom: 50px;
+}
+
+.earlier-releases::-webkit-scrollbar {
+    height: 8px;
+}
+
+.earlier-releases::-webkit-scrollbar-track {
+    background: var(--grunge-dark);
+    border-radius: 4px;
+}
+
+.earlier-releases::-webkit-scrollbar-thumb {
+    background: var(--electric-blue);
+    border-radius: 4px;
+}
+
+.albums-grid {
+    display: flex;
+    gap: 20px;
+    min-width: min-content;
 }
 
 .album-card {
@@ -579,6 +601,8 @@ img {
     overflow: hidden;
     transition: var(--transition-medium);
     border: 1px solid rgba(53, 132, 228, 0.2);
+    flex-shrink: 0;
+    width: 220px;
 }
 
 .album-card:hover {
@@ -1252,7 +1276,6 @@ img {
     }
 
     .members-grid,
-    .albums-grid,
     .merch-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1312,7 +1335,6 @@ img {
     }
 
     .members-grid,
-    .albums-grid,
     .merch-grid {
         grid-template-columns: 1fr;
     }
