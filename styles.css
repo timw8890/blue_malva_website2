@@ -948,9 +948,10 @@ img {
 }
 
 .gig-card {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     background: var(--dark-blue);
     padding: 25px 30px;
     border-radius: 10px;
@@ -972,7 +973,11 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-width: 60px;
+    padding: 10px;
+    background: rgba(53, 132, 228, 0.1);
+    border-radius: 8px;
 }
 
 .gig-day {
@@ -989,8 +994,15 @@ img {
     letter-spacing: 2px;
 }
 
+.gig-year {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
 .gig-details {
     flex: 1;
+    min-width: 0;
 }
 
 .gig-details h3 {
@@ -1015,6 +1027,18 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    flex-shrink: 0;
+}
+
+.gig-action .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.gig-action .btn svg {
+    flex-shrink: 0;
 }
 
 .gig-price {
@@ -1436,12 +1460,38 @@ img {
     }
 
     .gig-card {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .gig-date {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        padding: 8px 15px;
+    }
+
+    .gig-day {
+        font-size: 2rem;
+    }
+
+    .gig-details h3 {
+        font-size: 1.2rem;
     }
 
     .gig-action {
         width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .gig-action .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
