@@ -996,7 +996,15 @@ img {
    GIGS SECTION
    ============================================ */
 .gigs {
-    background: var(--midnight-blue);
+    background: url('img/hero.png') center/cover no-repeat;
+    position: relative;
+}
+
+.gigs::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 22, 40, 0.7);
 }
 
 .gigs-image {
