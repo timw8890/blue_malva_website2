@@ -871,7 +871,8 @@ img {
     letter-spacing: 3px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--electric-blue);
-    display: inline-block;
+    display: block;
+    text-align: center;
     padding-bottom: 5px;
 }
 
