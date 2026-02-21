@@ -632,6 +632,7 @@ img {
     display: flex;
     gap: 20px;
     min-width: min-content;
+    justify-content: center;
 }
 
 .album-card {
@@ -863,16 +864,19 @@ img {
     box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
 }
 
+.earlier-title-wrapper {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 .earlier-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
     color: var(--white);
-    margin-bottom: 25px;
     letter-spacing: 3px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--electric-blue);
-    display: block;
-    text-align: center;
+    display: inline-block;
     padding-bottom: 5px;
 }
 
