@@ -345,7 +345,15 @@ img {
    ABOUT SECTION
    ============================================ */
 .about {
-    background: var(--dark-blue);
+    background: url('img/band2.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 22, 40, 0.5);
 }
 
 .about-content {
@@ -358,7 +366,8 @@ img {
 .about-text {
     font-size: 1.1rem;
     font-weight: 300;
-    color: var(--text-muted);
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .about-text p {
