@@ -23,10 +23,19 @@
 
     --font-heading: 'Bebas Neue', sans-serif;
     --font-body: 'Oswald', sans-serif;
+    --font-band: '3 theHard way RMX', sans-serif;
 
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
     --transition-slow: 0.5s ease;
+}
+
+/* Custom Font Face */
+@font-face {
+    font-family: '3 theHard way RMX';
+    src: url('font/3 theHard way RMX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Reset & Base */
@@ -146,11 +155,21 @@ img {
 }
 
 .logo {
-    font-family: var(--font-heading);
+    font-family: var(--font-band);
     font-size: 2rem;
-    color: var(--electric-blue);
     letter-spacing: 4px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-blue {
+    color: var(--electric-blue);
+}
+
+.logo-malva {
+    color: var(--white);
 }
 
 .logo:hover {
@@ -233,11 +252,23 @@ img {
 }
 
 .hero-title {
+    font-family: var(--font-band);
     font-size: 6rem;
     color: var(--electric-blue);
     text-shadow: 0 0 40px rgba(53, 132, 228, 0.5);
     margin-bottom: 10px;
     animation: fadeInUp 1s ease;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.title-blue {
+    color: var(--electric-blue);
+}
+
+.title-malva {
+    color: var(--white);
 }
 
 .hero-subtitle {
@@ -787,11 +818,21 @@ img {
 }
 
 .footer-logo {
-    font-family: var(--font-heading);
+    font-family: var(--font-band);
     font-size: 2rem;
-    color: var(--electric-blue);
     letter-spacing: 4px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.footer-blue {
+    color: var(--electric-blue);
+}
+
+.footer-malva {
+    color: var(--white);
 }
 
 .footer-social {
