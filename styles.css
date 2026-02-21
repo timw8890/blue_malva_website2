@@ -1346,6 +1346,7 @@ img {
     border: 1px solid rgba(53, 132, 228, 0.2);
     transition: var(--transition-medium);
     text-decoration: none;
+    min-height: 200px;
 }
 
 .download-card:hover {
@@ -1599,6 +1600,15 @@ img {
     .gig-action .btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .downloads-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .download-card {
+        min-height: 150px;
     }
 }
 
