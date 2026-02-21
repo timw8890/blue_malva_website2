@@ -293,7 +293,7 @@ img {
 
 .hero-cta {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
     animation: fadeInUp 1s ease 0.4s both;
 }
@@ -301,8 +301,8 @@ img {
 .hero-socials-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 30px;
+    gap: 25px;
+    margin-top: 70px;
     animation: fadeInUp 1s ease 0.6s both;
     margin-left: auto;
     margin-right: auto;
@@ -1643,9 +1643,8 @@ img {
 
     .hero-social {
         gap: 10px;
-        max-width: 195px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
+        flex-wrap: wrap;
     }
 
     .hero-social-link {
