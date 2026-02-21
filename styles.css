@@ -240,7 +240,8 @@ img {
     background: linear-gradient(180deg,
             rgba(10, 22, 40, 0.7) 0%,
             rgba(10, 22, 40, 0.5) 50%,
-            rgba(10, 22, 40, 0.9) 100%);
+            rgba(10, 22, 40, 0.95) 96%,
+            var(--dark-blue) 100%);
 }
 
 .hero-content {
@@ -393,6 +394,7 @@ img {
 .about {
     background: var(--dark-blue);
     position: relative;
+    padding-top: 0;
 }
 
 .about::before {
